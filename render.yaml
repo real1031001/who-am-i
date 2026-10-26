@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: who-am-i
+    runtime: node
+    plan: free
+    region: singapore
+    branch: main
+    buildCommand: npm test
+    startCommand: npm start
+    healthCheckPath: /health
